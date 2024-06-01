@@ -25,14 +25,13 @@ message RegisterRequest {
 
 // Объект, который метод (ручка) вернёт.
 message RegisterResponse {
-  int64 user_id = 1; // User ID of the registered user.
+  uint32 user_id = 1; // User ID of the registered user.
 }
 
 // То же самое для метода Login()
 message LoginRequest {
   string email = 1; // Email of the user to login.
   string password = 2; // Password of the user to login.
-  int32 app_id = 3; // ID of the app to login to.
 }
 
 message LoginResponse {
