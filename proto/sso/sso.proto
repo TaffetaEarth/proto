@@ -40,7 +40,7 @@ message LoginResponse {
 }
 
 message IsAdminRequest {
-  uint32 user_id = 1; // User ID to validate.
+  string token = 1; // User ID to validate.
 }
 
 message IsAdminResponse {
